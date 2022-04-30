@@ -1,0 +1,15 @@
+package serilization;
+import java.util.*;
+class LoL implements Serializable
+{
+	int a;
+	String b="Sorry";
+}
+public class Deserialization {
+
+	public static void main(String[] args) {
+	
+
+	}
+
+}

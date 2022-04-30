@@ -1,0 +1,23 @@
+package abstraction;
+
+
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+	
+		double a=System.nanoTime()/1000000.0; 
+		
+		   for(int i=1;i<=1;i++)
+	       {
+	    	   System.out.println(i);
+	       }
+		 
+     double b=System.nanoTime()/1000000.0; 
+   
+    System.out.println((b-a)+"ms");
+	
+
+}
+}

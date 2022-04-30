@@ -1,0 +1,34 @@
+package studentdatabaseapp;
+
+import java.util.Scanner;
+
+public class Student {
+	
+	private String firstname;
+	private String lastname;
+	private String gradeYear;
+	private int studentId;
+	private String courses;
+	private int tuitionBalance;
+	private int costOfCourse;
+	
+	
+	//Constructor: prompt user to enter student's name and year
+	
+	
+	public Student()
+	{
+		Scanner in=new Scanner(System.in);
+		
+	}
+	//Generate an Id
+	
+	//Enroll in course
+	
+	//view balance
+	
+	//Pay tuition
+	
+	//Show status
+
+}

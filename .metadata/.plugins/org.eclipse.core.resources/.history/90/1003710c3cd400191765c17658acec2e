@@ -1,0 +1,27 @@
+package abstraction;
+
+import java.math.BigInteger;
+
+public class Grains {
+
+	public static void main(String[] args) { 
+	BigInteger sum=new BigInteger("0");
+    BigInteger a[]=new BigInteger[10000000]; 
+
+	for(int i=0;i<=9999999;i++)
+	{	
+			a[i]=BigInteger.valueOf(2).pow(i);
+			sum=sum.add(a[i]);
+    }
+	
+	System.out.println("the sum is:"+sum);
+	System.out.println("the data is:");
+	for(int i=0;i<=9999999;i++)
+	{
+			System.out.printf("%d : %d\n",i,a[i]);			
+    }
+	
+	
+	}
+
+}

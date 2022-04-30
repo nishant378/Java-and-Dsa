@@ -1,0 +1,27 @@
+package graphs;
+
+class AdjacencylistUsingArray
+{
+	int arr[][]=new int[8][];
+	char a[]=new char[8];
+	AdjacencylistUsingArray()
+	{
+		for(int i=0;i<arr.length;i++)
+		{
+			arr[i]=new int[2];
+		}
+	}
+	void insertVertex(char vertex)
+	{
+		
+	}
+}
+public class AdjacencyListUsingArray {
+
+	public static void main(String[] args) {
+		AdjacencylistUsingArray obj=new AdjacencylistUsingArray();
+	      obj.insertVertex('A');
+
+	}
+
+}

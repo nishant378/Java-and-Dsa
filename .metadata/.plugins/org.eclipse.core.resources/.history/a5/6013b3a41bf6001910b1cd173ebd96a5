@@ -1,0 +1,14 @@
+package recursion;
+class R
+{
+	
+}
+public class Practice2 {
+
+	public static void main(String[] args) {
+		R obj=new R();
+		
+
+	}
+
+}

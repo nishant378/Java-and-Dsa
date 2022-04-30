@@ -1,0 +1,10 @@
+package generics;
+
+public class GenericsClass {
+
+	public static void main(String[] args) {
+	
+
+	}
+
+}

@@ -1,0 +1,117 @@
+package graphs;
+
+class AdjacencylistUsingArray
+{
+	int i=0;
+	int flag1=0;
+	int flag2=0;
+	int check=0;
+	int address1,address2;
+	int arr[][]=new int[8][];
+	char a[]=new char[8];
+	AdjacencylistUsingArray()
+	{
+		for(int i=0;i<arr.length;i++)
+		{
+			arr[i]=new int[1];
+		}
+		System.out.println(arr.length);
+	}
+	void insertVertex(char vertex)
+	{
+		if(i<a.length)
+		{
+			a[i]=vertex;
+			i++;
+		}
+	}
+	
+	void insertEdge(char vertex1,char vertex2)
+	{
+		flag1=0;
+		flag2=0;
+		check=0;
+		if(selfEdge(vertex1,vertex2)==true)
+		{
+			checkVertex(vertex1,vertex2);
+			if(check==1)
+			{
+				for(int i=0;i<a.length;i++)
+				{
+					if(a[i]==vertex1)
+					{
+						address1=i;
+					}
+					if(a[i]==vertex2)
+					{
+						address2=i;
+					}
+				}
+				connection(address1,address2);
+			}
+			
+		}
+	}
+	
+	void connection(int address1,int address2)
+	{
+		System.out.println(address1);
+		System.out.println((address2));
+		arr[address1][arr[address1].length-1]=address2;
+		arr[address2][arr[address2].length-1]=address1;
+	}
+	
+	boolean selfEdge(char vertex1,char vertex2)
+	{
+		if(vertex1==vertex2)
+		{
+			return false;
+		}
+		else
+		{
+			return true;
+		}
+	}
+	
+	void checkVertex(char vertex1,char vertex2)//are they exist?
+	{
+		for(int i=0;i<a.length;i++)
+		{
+			if(vertex1==a[i])
+			{
+				flag1=1;
+			}
+			if(vertex2==a[i])
+			{
+				flag2=1;
+			}
+			
+			if(i==a.length-1)
+			{
+				if(flag1==1 && flag2==1)
+				{
+					check=1;
+				}
+			}
+		}
+	}
+}
+public class AdjacencyListUsingArray {
+
+	public static void main(String[] args) {
+		AdjacencylistUsingArray obj=new AdjacencylistUsingArray();
+	      obj.insertVertex('A');
+	      obj.insertVertex('B');
+			obj.insertVertex('C');
+			obj.insertVertex('D');
+			obj.insertVertex('E');
+			obj.insertVertex('F');
+			obj.insertVertex('G');
+			obj.insertVertex('H');
+                    obj.insertEdge('A','B');
+                   
+            		
+            		
+	}
+
+}

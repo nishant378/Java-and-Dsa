@@ -1,0 +1,18 @@
+package threads;
+class Account
+{
+   int amt;
+	public Account(int amount)
+	{
+		amt=amount;
+		System.out.println(amt);
+	}
+}
+public class MultipleThread {
+
+	public static void main(String[] args) {
+     Account obj=new Account(1000);
+    
+	}
+
+}

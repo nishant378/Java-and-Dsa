@@ -1,0 +1,29 @@
+package javaoopsandproject;
+class Test
+{
+	int a;
+	int b;
+	Test()
+	{
+		this(12,11);
+	}
+	Test(int a,int b)
+	{
+		this.a=a;
+		this.b=b;
+	}
+	void display()
+	{
+		System.out.println("a:"+a);
+		System.out.println("b:"+b);
+	}
+}
+public class This2 {
+
+	public static void main(String[] args) {
+		Test obj=new Test();
+		obj.display();
+
+	}
+
+}

@@ -1,0 +1,34 @@
+package serilization;
+import java.io.*;
+class LoL implements Serializable
+{
+	int a;
+	String b="Sorry";
+}
+public class Deserialization  {
+
+	public static void main(String[] args) throws ClassCastException{
+	LoL obj=new LoL();
+	obj.a=12;
+	obj.b="Jio";
+	System.out.println(obj.a);
+	try
+	{
+	 FileInputStream obj1=new FileInputStream("E:/music/hello.txt");
+	 ObjectInputStream obj2=new ObjectInputStream(obj1);
+	 
+	 obj2.readObject();
+	 
+	 System.out.println(obj2.readObject());
+	}
+     catch(IOException e)
+	{
+    	 System.out.println(e.getMessage());
+	}
+	catch(ClassNotFoundException i)
+	{
+		System.out.println(i.getMessage());
+	}
+	}
+
+}

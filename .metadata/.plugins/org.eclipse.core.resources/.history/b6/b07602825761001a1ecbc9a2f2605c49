@@ -1,0 +1,65 @@
+package graphs;
+
+import java.util.TreeSet;
+
+class AdjacencylistUsingTree
+{
+	int i=0;
+	int address1,address2;
+	char a[]=new char[8];
+    TreeSet b[]=new TreeSet[8];
+	void insertVertex(char vertex)
+	{
+		if(i<a.length)
+		{
+			a[i]=vertex;
+			i++;
+		}
+	}
+	
+	void insertEdge(char vertex1,char vertex2)
+	{
+		for(int i=0;i<this.i;i++)
+		{
+			if(a[i]==vertex1)
+			{
+				address1=i;
+			}
+			if(a[i]==vertex2)
+			{
+				address2=i;
+			}
+		}
+        
+        Connection(address1,address2);
+	}
+	
+	void Connection(int address1,int address2)
+	{
+	    b[address1].add(address2);
+	    
+	    b[address2].add(address1);
+	}
+	
+}
+public class AdjacencyListUsingTree {
+
+	public static void main(String[] args) {
+		AdjacencylistUsingTree obj=new AdjacencylistUsingTree();
+		    obj.insertVertex('A');
+	        obj.insertVertex('B');
+			obj.insertVertex('C');
+			obj.insertVertex('D');
+			obj.insertVertex('E');
+			obj.insertVertex('F');
+			obj.insertVertex('G');
+			obj.insertVertex('H');
+			      obj.insertEdge('A','B');
+			System.out.println("Vertex list");
+			for(int i=0;i<obj.i;i++)
+			{
+				System.out.println(obj.a[i]);
+			}
+	}
+
+}

@@ -1,0 +1,16 @@
+package graphs;
+
+
+class ShortestpathforUnweightedGraph
+{
+	
+}
+
+public class ShortestPathForUnweightedGraph {
+
+	public static void main(String[] args) {
+		ShortestpathforUnweightedGraph obj=new ShortestpathforUnweightedGraph();
+
+	}
+
+}

@@ -1,0 +1,54 @@
+package threads;
+import java.util.Scanner;
+class Account
+{
+   int bal;
+	public Account(int amount)
+	{
+		bal=amount;
+	}
+    public boolean isSufficient(int a)
+    {
+    	if(bal>a)
+    	{
+    		return true;
+    	}
+    	else
+    	{
+    		return false;
+    	}
+    }
+    public void withdraw(int am)
+    {
+    	bal=bal-am;
+    	System.out.println("Money Left:"+bal);
+    	System.out.println("Money withdrawl:"+am);
+    }
+}
+class Customer implements Runnable
+{
+	public void run()
+	{
+		Account account = null;
+	     Scanner obj=new Scanner(System.in);
+	     System.out.println("Enter your amount that you want to withdrawl:");
+	     int amt=obj.nextInt();
+	    if(account.isSufficient(amt))
+	    {
+	    	account.withdraw(amt);
+	    }
+	    else
+	    {
+	    	System.out.println("Insufficient balance");
+	    }
+	}
+}
+public class MultipleThread {
+
+	public static void main(String[] args) {
+     Account obj=new Account(1000);
+     Customer obj1=new Customer();
+     
+	}
+
+}

@@ -1,0 +1,14 @@
+package serilization;
+import java.io.*;
+class Demos implements Serializable
+{
+	String name="Nishant";
+	int rollno=11;
+}
+public class Deserialization  {
+
+	public static void main(String[] args){
+       
+
+	}
+}

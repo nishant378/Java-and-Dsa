@@ -1,0 +1,45 @@
+package graphs;
+
+class AdjacencylistUsingArray
+{
+	int i=0;
+	int arr[][]=new int[8][];
+	char a[]=new char[8];
+	AdjacencylistUsingArray()
+	{
+		for(int i=0;i<arr.length;i++)
+		{
+			arr[i]=new int[2];
+		}
+	}
+	void insertVertex(char vertex)
+	{
+		if(i<a.length)
+		{
+			a[i]=vertex;
+			i++;
+		}
+	}
+	
+	void insertEdge(char vertex1,char vertex2)
+	{
+		
+	}
+}
+public class AdjacencyListUsingArray {
+
+	public static void main(String[] args) {
+		AdjacencylistUsingArray obj=new AdjacencylistUsingArray();
+	      obj.insertVertex('A');
+	      obj.insertVertex('B');
+			obj.insertVertex('C');
+			obj.insertVertex('D');
+			obj.insertVertex('E');
+			obj.insertVertex('F');
+			obj.insertVertex('G');
+			obj.insertVertex('H');
+                    obj.insertEdge('A','B');
+           
+	}
+
+}

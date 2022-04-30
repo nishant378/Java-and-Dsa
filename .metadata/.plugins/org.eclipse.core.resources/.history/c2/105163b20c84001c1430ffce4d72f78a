@@ -1,0 +1,168 @@
+
+import java.util.Scanner;
+public class bebo {
+
+	public static void main(String[] args) {
+		
+		
+		System.out.println("Main menu- please select an option:");
+		System.out.println("1.Add a course");
+		System.out.println("2.Add a student");
+		System.out.println("3.Add a result");
+		System.out.println("4.View results");
+		System.out.println("5.Quit");
+		
+		int temp1=0;
+		Course[] obj1 = new Course[5]; 
+		
+		int temp2=0;
+		Student[] obj2=new Student[10];
+		
+		Scanner myObj = new Scanner(System.in);
+	    System.out.println("Enter your option:");
+	    int option = myObj.nextInt();  
+	    
+	    char ch='A';
+	    switch(option){  
+	    
+	    case 1: 
+	    while(ch=='A' || ch=='a') 
+	    {
+	    	System.out.println("Please enter course code:");
+	    	String courseCode=myObj.nextLine();
+	    	courseCode=myObj.nextLine();
+	    	System.out.println("Please enter course name:");
+	    	String courseName=myObj.nextLine();
+	    	if(temp1<5)
+	    	{
+	    	    obj1[temp1]=new Course(courseCode,courseName);
+	    	    temp1++;
+	    	    while(true)
+	    	    {
+	    	        System.out.println("Would you like to [A]dd a new course or [R]eturn to the previous menu:");
+	    	        ch=myObj.next().charAt(0);
+	    	        if(ch=='a' || ch=='A' || ch=='R' || ch=='r')
+	    	        {
+	    	        	break;
+	    	        }
+	    	        else 
+	    	        {
+	    	        	System.out.println("invalid try again between R and A");
+	    	        }
+	    	    }
+	    	}
+	    	else 
+	    	{
+	    		System.out.println("Course storage is full");
+	    	}
+	    	
+	    }
+	        break;  
+	    case 2: 
+	    	ch='A';
+	    	while(ch=='A' || ch=='a') 
+		    {
+	    	System.out.println("Please enter student ID");
+	    	String studentId=myObj.nextLine();
+	    	studentId=myObj.nextLine();
+	    	System.out.println("Pleae enter student name");
+	    	String studentName=myObj.nextLine();
+	    	if(temp2<10)
+	    	{
+	    		obj2[temp2]=new Student(studentId,studentName);
+	    		temp2++;
+	    		while(true)
+		    	{
+		    	    System.out.println("Would you like to [A]dd a new student or [R]eturn to the previous menu:");
+		    	    ch=myObj.next().charAt(0);
+		    	    if(ch=='a' || ch=='A' || ch=='R' || ch=='r')
+		    	    {
+		    	        break;
+		    	    }
+		    	    else 
+		    	    {
+		    	        System.out.println("invalid try again between R and A");
+		    	    }
+		    	 }
+	    	}
+	    	else
+	    	{
+	    		System.out.println("Can't have more student");
+	    	}
+		  }
+	        break;  
+	    case 3: 
+	    	System.out.println("Please enter studentId");
+	    	String sId=myObj.nextLine();
+	    	sId=myObj.nextLine();
+	    	System.out.println("Please enter courseCode");
+	    	String CC=myObj.nextLine();
+	    	for(int i=0;i<temp2;i++)
+	    	{
+	    		if(sId.equals(obj2[i].studentId))
+	    		{
+	    			
+	    		}
+	    		else if(i==temp2-1)
+	    		{
+	    			System.out.println("Wrong studentID");
+	    		}
+	    	}
+	    	for(int i=0;i<temp1;i++)
+	    	{
+	    		if(CC.equals(obj1[i].courseCode))
+	    		{
+	    			
+	    		}
+	    		else if(i==temp1-1)
+	    		{
+	    			System.out.println("Wrong courseCode");
+	    		}
+	    	}
+	    break;  
+	    
+	    case 4: System.out.println("40");
+	    break;
+	    //Default case statement  
+	    default:System.out.println("Not in 10, 20 or 30");  
+	    }  
+	    
+	    
+	    
+		
+		
+		
+		
+
+	}
+
+}
+
+
+class Course
+{
+	String courseCode;
+	String courseName;
+	
+	Course(String courseCode, String courseName)
+	{
+		this.courseCode=courseCode;
+		this.courseName=courseName;
+	}
+}
+
+class Student
+{
+	String studentId;
+	String studentName;
+	
+	Student(String studentId, String studentName)
+	{
+		this.studentId=studentId;
+		this.studentName=studentName;
+	}
+	
+}
+
+
+

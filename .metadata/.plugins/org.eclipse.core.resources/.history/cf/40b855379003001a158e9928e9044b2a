@@ -1,0 +1,32 @@
+package recursion;
+import java.awt.*;
+import javax.swing.*;
+
+ public class Circle extends JFrame
+{
+	public Circle()
+	{
+		setTitle("Circle");
+		setSize(960,960);
+		setVisible(true);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+	}
+	public void paint(Graphics g)
+    {		
+		for(int i=0;i<=9;i++)
+		{
+		g.setColor(Color.RED);
+		g.drawOval(480,280,200,200);
+		g.setColor(Color.RED);
+		g.drawOval(300,200,500,120);
+		}
+    }
+	
+	public static void  main(String[] args)
+	{
+	     Circle obj=new Circle();
+	   
+	     obj.paint(null);
+	    
+	}
+}

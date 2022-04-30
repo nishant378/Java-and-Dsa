@@ -1,0 +1,18 @@
+package recursion;
+class Z
+{
+	void some()
+	{
+		System.out.println("some");
+		some();
+	}
+}
+public class Test {
+
+	public static void main(String[] args) {
+		
+     Z obj=new Z();
+     obj.some();
+	}
+
+}

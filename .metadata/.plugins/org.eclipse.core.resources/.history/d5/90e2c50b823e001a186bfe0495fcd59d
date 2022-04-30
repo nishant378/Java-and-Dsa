@@ -1,0 +1,24 @@
+package heap;
+
+class Maxheap
+{
+	int i=0;
+	void insert(int a[],int data)
+	{
+		if(i<5)
+		{
+	    a[i]=data;
+	    i++;
+		}
+	}
+}
+public class MaxHeap {
+
+	public static void main(String[] args) {
+		Maxheap obj=new Maxheap();
+		int a[]=new int[5];
+		obj.insert(a,15);
+
+	}
+
+}

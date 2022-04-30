@@ -1,0 +1,22 @@
+package serilization;
+import java.io.*;
+class Demos implements Serializable
+{
+	String name="Nishant";
+	int rollno=11;
+}
+public class Deserialization  {
+
+	public static void main(String[] args){
+       try
+       {
+    	   FileInputStream obj1=new FileInputStream("E:/music/hi.txt");
+    	 ObjectInputStream obj1=new  ObjectInputStream() ;
+    	 obj1.readObject();
+       }
+       catch(IOException e)
+       {
+    	   
+       }
+	}
+}

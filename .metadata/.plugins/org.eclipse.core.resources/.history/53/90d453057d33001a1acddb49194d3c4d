@@ -1,0 +1,53 @@
+package tree;
+
+class ArrayToBst
+{
+	Node root=new Node();
+	Node c=new Node();
+	int flag=0;
+	class Node
+	{
+		Node left;
+		int data;
+		Node right;
+	}
+	  
+	int middle(int a[])
+	{
+		return a.length/2;
+	}
+     void makingRoot(int a[])
+     {
+    	 
+    	  int mid=a.length/2;
+          int Root=a[mid];
+          System.out.println(Root);
+          root.left=null;
+          root.data=Root;
+          root.right=null;        
+          c=root; 
+     }
+     
+     void arrayToBst(int a[])
+     {
+    	 for(int i=0;i<a.length;i++)
+    	 {
+    		 arraytobst(a,i);
+    	 }
+     }
+     
+     void arraytobst(int a[],int i)
+     {
+    	 
+     }
+}
+public class Problem10 {
+
+	public static void main(String[] args) {
+	    ArrayToBst obj=new ArrayToBst();
+	    int a[]= {1,5,9,13,15};
+	    obj.makingRoot(a);
+      
+	}
+
+}

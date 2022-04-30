@@ -1,0 +1,18 @@
+package generics;
+class Example
+{
+    <E>void display(E i)
+    {
+    	System.out.println(i);
+    }
+}
+public class Generics {
+
+	public static void main(String[] args) {
+	Example obj=new Example();
+	obj.display(10);
+	obj.display("po");
+
+	}
+
+}

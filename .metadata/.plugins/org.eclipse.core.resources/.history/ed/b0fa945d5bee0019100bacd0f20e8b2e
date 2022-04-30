@@ -1,0 +1,16 @@
+package recursion;
+import java.math.BigInteger;
+public class Test {
+
+	public static void main(String[] args) {
+      BigInteger base=new BigInteger("5");
+        BigInteger power=new BigInteger("3");
+        BigInteger dumy=new BigInteger("1");
+	for(int  i=1;i<=power;i++)
+	{
+	  dumy=dumy.multiply(base);
+	}
+	System.out.println(dumy);
+	}
+
+}

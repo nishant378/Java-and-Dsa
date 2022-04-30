@@ -1,0 +1,35 @@
+package tree;
+
+class ArrayToBst
+{
+	class Node
+	{
+		Node left;
+		int data;
+		Node right;
+	}
+     void ArraytoBst(int a[])
+     {
+    	     System.out.println(a.length);
+    	     int mid=a.length/2;
+    	    int root=a[mid];
+          Node newnode=new Node();
+          newnode.left=null;
+          newnode.data=root;
+          newnode.right=null;
+    	for(int i=0;i<mid;i++)
+    	{
+    		
+    	}
+     }
+}
+public class Problem10 {
+
+	public static void main(String[] args) {
+	    ArrayToBst obj=new ArrayToBst();
+	    int a[]= {1,5,9,13,15};
+	    obj.ArraytoBst(a);
+      
+	}
+
+}

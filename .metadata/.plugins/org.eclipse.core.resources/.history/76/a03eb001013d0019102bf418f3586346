@@ -1,0 +1,16 @@
+package serilization;
+import java.io.*;
+class Demo implements Serializable
+{
+	int a;
+	
+}
+public class Serialization {
+
+	public static void main(String[] args) {
+         Demo obj=new Demo();
+         
+
+	}
+
+}

@@ -1,0 +1,23 @@
+package recursion;
+
+class A
+{
+	static void p()
+	{
+		System.out.println("Hello");
+		p();
+	}
+}
+
+
+public class Recursion {
+
+	public static void main(String[] args) {
+		A.p();
+		
+	
+		
+
+	}
+
+}

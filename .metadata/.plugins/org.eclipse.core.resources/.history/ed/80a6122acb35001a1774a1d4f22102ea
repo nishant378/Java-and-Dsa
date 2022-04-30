@@ -1,0 +1,83 @@
+package tree;
+
+
+class AvlTree 
+{
+	Node root=new Node();
+	Node c=new Node();
+	class Node
+	{
+		Node left;
+	    int data;
+		Node right;
+	}
+	
+	void makingRoot(int data)
+	{
+		root.left=null;
+		root.data=data;
+		root.right=null;
+		c=root;
+	}
+	
+	void  insert(Node c,int data)
+	{
+			if(c==null)
+			{
+				return ;
+			}
+			else  if(c.data>data)
+			      {
+				       if(c.left!=null)
+				       {
+				    	   insert(c.left,data);
+				       }
+				       else
+				       {
+				    	   Node newnode=new Node();
+				    	   newnode.left=null;
+				    	   newnode.data=data;
+				    	   newnode.right=null;
+				    	   c.left=newnode;
+				       }
+				  }
+			else if(c.data<data)
+				{
+				    if(c.right!=null)
+				    {
+				    	insert(c.right,data);
+				    }
+				    else
+				    {
+				    	Node newnode=new Node();
+				    	newnode.left=null;
+				    	newnode.data=data;
+				    	newnode.right=null;
+				    	c.right=newnode;
+				    }
+				
+					}
+			
+	 }
+	void Traverse(Node c)
+	{
+		if(c!=null)
+		{
+			
+			Traverse(c.left);
+			Traverse(c.right);
+		System.out.println(c.data);
+		}
+	}
+}
+public class Avltree {
+
+	public static void main(String[] args) {
+		AvlTree obj=new AvlTree();
+         obj.makingRoot(5);
+         obj.insert(obj.root,6);
+         obj.insert(obj.root,4);
+         obj.Traverse(obj.root);
+	}
+
+}

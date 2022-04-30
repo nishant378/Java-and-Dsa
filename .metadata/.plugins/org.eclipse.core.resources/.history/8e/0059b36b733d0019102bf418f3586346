@@ -1,0 +1,14 @@
+package serilization;
+import java.io.*;
+class Cat implements Serializable
+{
+	
+}
+public class Example {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

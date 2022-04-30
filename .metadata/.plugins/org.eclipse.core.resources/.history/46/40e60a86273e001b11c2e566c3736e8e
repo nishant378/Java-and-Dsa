@@ -1,0 +1,12 @@
+package javaoopsandproject;
+
+
+public class StringFormatting {
+
+	public static void main(String[] args) {
+		System.out.println("%d"+5);
+		
+
+	}
+
+}

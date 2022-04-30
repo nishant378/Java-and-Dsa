@@ -1,0 +1,19 @@
+package serilization;
+import java.io.*;
+class Cat implements Serializable
+{
+	int age;
+	String name;
+	void Jump()
+	{
+		System.out.println("Jump on the table");
+	}
+}
+public class Example {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

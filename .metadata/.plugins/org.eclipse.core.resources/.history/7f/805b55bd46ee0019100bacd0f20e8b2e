@@ -1,0 +1,16 @@
+package recursion;
+
+public class Test {
+
+	public static void main(String[] args) {
+	int base=2;
+	int power=7;
+	int dumy=1;
+	for(int i=1;i<=power;i++)
+	{
+	  dumy=dumy*base;
+	}
+	System.out.println(dumy);
+	}
+
+}

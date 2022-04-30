@@ -1,0 +1,29 @@
+package abstraction;
+
+import java.util.concurrent.TimeUnit;
+
+public class Test {
+
+	public static void main(String[] args) {
+
+		  long a=System.currentTimeMillis(); 
+		  
+		  
+		  
+		  
+	       for(int i=1;i<=1;i++)
+	       {
+	    	   System.out.println(i);
+	       }
+	        
+	        
+	        
+	        
+	        
+	        long b=System.currentTimeMillis(); 
+	        System.out.println((b-a)+"ms");
+	      System.out.println(TimeUnit.MILLISECONDS.toSeconds(b-a)+"sec");
+	
+
+}
+}

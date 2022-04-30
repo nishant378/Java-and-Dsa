@@ -1,0 +1,80 @@
+package abstraction;
+
+import java.util.*;
+import java.lang.*;
+class Solution {
+    public int reverse(long x) {
+    	@SuppressWarnings("deprecation")
+		Long obj=new Long(x);
+   if(obj.SIZE/8==Integer.SIZE/8)
+   {
+    if(x>=0)
+    {
+      int y= ReverseInteger(x);
+        return y;
+    }
+    else 
+    {
+    	
+    	x=(-1)*(x);
+        int z=ReverseInteger(x);
+        return -z;
+    }
+   
+ }
+   else
+   {
+	   System.out.println("hello");
+	   return 0;
+   }
+    }
+
+    
+    public int ReverseInteger(long x)
+    {
+        @SuppressWarnings("deprecation")
+		Long obj=new Long(x);
+        String temp=obj.toString();
+        int[] newGuess = new int[temp.length()];
+        int flag=temp.length()-1;
+        for (int i = 0; i < temp.length(); i++)
+        {
+          newGuess[flag] = ((int)temp.charAt(i))-48;
+          flag--;
+        } 
+        String[] strArray = new String[newGuess.length];
+ 
+        for (int i = 0; i < newGuess.length; i++) {
+            strArray[i] = String.valueOf(newGuess[i]);
+        }
+        StringBuffer sb = new StringBuffer();
+        for(int i = 0; i < strArray.length; i++) {
+           sb.append(strArray[i]);
+        }
+        String str = sb.toString();
+        System.out.println(str);
+        
+          
+        if(Long.parseLong(str)<=2147483647)//-2147483648
+        {
+        	int i=Integer.parseInt(str); 
+            return i;	
+        }
+        else
+        {
+            return 0;
+        }
+    }
+}
+class ReverseInteger
+{
+    public static void main(String []args)
+    {
+    	 Solution obj=new Solution();
+         //@SuppressWarnings("resource")
+		//Scanner obj1=new Scanner(System.in);
+        // System.out.println("Enter any number:");
+        // int value=obj1.nextInt();
+         System.out.println(obj.reverse(-2147483648));
+    }
+}

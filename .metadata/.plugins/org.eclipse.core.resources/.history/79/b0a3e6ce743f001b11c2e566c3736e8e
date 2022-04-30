@@ -1,0 +1,14 @@
+package javaoopsandproject;
+
+class Car
+{
+	
+}
+public class Inheritance {
+
+	public static void main(String[] args) {
+	      
+
+	}
+
+}

@@ -1,0 +1,36 @@
+package javaoopsandproject;
+
+class Car
+{
+	 public int[] twoSum(int[] nums, int target) {
+		 int b[]=new int[2];
+	       for(int i=0;i<nums.length;i++)
+	       {
+	    	   for(int j=i+1;j<nums.length;j++)
+	    	   {
+	    		   if(nums[i]+nums[j]==target)
+	    		   {
+	    			   b[0]=i;
+	    			   b[1]=j;
+	    			   break;
+	    		   }
+	    	   }
+	       }
+	       System.out.println(b[0]);
+	       System.out.println(b[1]);
+	       return b;
+	    }
+}
+public class Inheritance {
+
+	public static void main(String[] args) {
+	      Car obj=new Car();
+	      int a[]= {2,3,5,5};
+	       int c[]= obj.twoSum(a,10);
+	       System.out.println(c);
+	        
+	      
+
+	}
+
+}

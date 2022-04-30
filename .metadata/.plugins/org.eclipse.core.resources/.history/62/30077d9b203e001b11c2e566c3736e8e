@@ -1,0 +1,17 @@
+package javaoopsandproject;
+class hello 
+{
+	hello(){
+		System.out.println("hello world!");
+	}
+}
+public class Constructor {
+
+	public static void main(String[] args) {
+		@SuppressWarnings("unused")
+		hello obj=new hello();
+        
+
+	}
+
+}

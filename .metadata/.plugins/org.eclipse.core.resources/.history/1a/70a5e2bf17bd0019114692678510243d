@@ -1,0 +1,30 @@
+package ds;
+import java.util.Scanner;;
+
+class Node
+{
+	int data;
+	Node node;
+    void data(int Data)
+    {
+	data=Data;
+	this.node=null;
+     }
+    void display()
+    {
+    System.out.println(this.data);
+    }
+}
+public class Linklist {
+
+	public static void main(String[] args) {
+		Scanner obj1=new Scanner(System.in);
+		int a=obj1.nextInt();
+	Node obj=new Node();
+	System.out.println("Enter data of node");
+	obj.data(a);
+	obj.display();
+obj1.close();
+	}
+
+}

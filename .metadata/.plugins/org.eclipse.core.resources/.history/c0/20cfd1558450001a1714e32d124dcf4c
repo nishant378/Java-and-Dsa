@@ -1,0 +1,15 @@
+package studentdatabaseapp;
+
+public class StudnentdatabaseApp {
+
+	public static void main(String[] args) {
+		Student obj=new Student();
+		
+		//Ask how many user we want to add
+		
+		
+		//create a number of new student
+
+	}
+
+}

@@ -1,0 +1,23 @@
+package queue;
+import java.util.*;
+class HalfQueue
+{
+   void divide(Queue<Integer> a)
+   {
+	      System.out.println(a.size());
+   }
+}
+public class Problem4 {
+
+	public static void main(String[] args) {
+		Queue <Integer> a= new LinkedList<>();
+		HalfQueue obj=new HalfQueue();
+		a.enqueue(10);
+		a.enqueue(20);
+		a.enqueue(30);
+		a.
+		obj.divide(a); 
+
+	}
+
+}

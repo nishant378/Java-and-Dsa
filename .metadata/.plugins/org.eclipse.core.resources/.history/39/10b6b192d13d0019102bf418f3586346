@@ -1,0 +1,19 @@
+package networking;
+import java.io.IOException;
+import java.net.*;
+public class ServerSocket {
+
+	public static void main(String[] args) {
+               try
+               {
+            	   
+               
+		ServerSocket obj=new ServerSocket(6748);
+               }
+               catch(IOException i)
+               {
+            	  System.out.println(i.getMessage());
+               }
+	}
+
+}

@@ -1,0 +1,21 @@
+package networking;
+import java.io.*;
+import java.net.*;
+public class Sockets1 {
+
+	public static void main(String[] args) {
+		try
+		{
+	Socket obj=new Socket("Y",3412);
+	DataOutputStream obj1=new DataOutputStream(obj.getOutputStream());
+	obj1.writeUTF("Hello John");
+	obj1.close();
+	obj.close();
+		}
+		catch(Exception e)
+		{
+			System.out.println(e.getMessage());
+		}
+	}
+
+}

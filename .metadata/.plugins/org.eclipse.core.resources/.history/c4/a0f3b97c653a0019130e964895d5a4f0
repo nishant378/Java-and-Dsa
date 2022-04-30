@@ -1,0 +1,30 @@
+package generics;
+class Example
+{
+    <E>void display(E i[])
+    {
+    	for(int j=0;j<i.length;j++){
+    		System.out.println(i[j]);
+    	}
+    }
+    <E> void display(E i)
+    {
+    	System.out.println(i);
+    }
+}
+public class Generics {
+
+	public static void main(String[] args) {
+		  Integer i[]={2,1,4,5,3};
+		  String j[]={"h","r","i","l"};
+	      Example obj=new Example();
+	      obj.display(i);
+	      obj.display(j);
+	     obj.display(5);
+	      int l=4;
+	      obj.display(l);
+	      int  k[]={2,1,4,5,3};
+	      System.out.println(k);
+	}
+
+}

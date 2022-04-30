@@ -1,0 +1,39 @@
+package abstraction;
+import java.util.*;
+
+public class ReverseInteger {
+
+	public static void main(String[] args) {
+		@SuppressWarnings("deprecation")
+		Integer obj=new Integer(50);
+        String temp=obj.toString();
+        System.out.println(temp.length());
+        int[] newGuess = new int[temp.length()];
+        int flag=temp.length()-1;
+        for (int i = 0; i < temp.length(); i++)
+        {
+          newGuess[flag] = ((int)temp.charAt(i))-48;
+          flag--;
+        } 
+    
+  
+        
+        String[] strArray = new String[newGuess.length];
+ 
+        for (int i = 0; i < newGuess.length; i++) {
+            strArray[i] = String.valueOf(newGuess[i]);
+        }
+ 
+        System.out.println(Arrays.toString(strArray));
+         
+        
+        
+        /* int i=Integer.parseInt(s); 
+         System.out.println(i);*/
+        
+        
+        
+
+	}
+
+}

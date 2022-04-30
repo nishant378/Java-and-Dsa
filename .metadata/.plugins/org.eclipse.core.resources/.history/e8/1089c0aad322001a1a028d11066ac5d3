@@ -1,0 +1,38 @@
+package linkedlist;
+
+class MakingStack
+{
+	int count=0;
+	Node start=new Node();
+	Node c=new Node();
+	class Node
+	{
+		int data;
+		Node next;
+	}
+	
+	void push(int data)
+	{
+		if(count==0)
+		{
+			start.data=data;
+			start.next=null;
+			c=start;
+			count++;
+		}
+		else
+		{
+			
+		}
+	}
+	
+}
+public class Problem1 {
+
+	public static void main(String[] args) {
+	MakingStack obj=new MakingStack();
+    obj.push(1);
+
+	}
+
+}

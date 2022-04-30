@@ -1,0 +1,16 @@
+package queue;
+
+public class test {
+
+	@SuppressWarnings("null")
+	public static void main(String[] args) {
+		int a[]=new int[4];
+		a[1]=(Integer) null;
+	for(int i=0;i<=3;i++)
+	{
+		System.out.println(a[i]);
+	}
+
+	}
+
+}

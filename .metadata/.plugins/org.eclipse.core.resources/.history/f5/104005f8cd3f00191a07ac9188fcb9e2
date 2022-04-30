@@ -1,0 +1,25 @@
+package threads;
+import java.util.Scanner;
+class Account
+{
+   int amt;
+	public Account(int amount)
+	{
+		amt=amount;
+	}
+}
+class Customer implements Runnable
+{
+	public void run()
+	{
+		
+	}
+}
+public class MultipleThread {
+
+	public static void main(String[] args) {
+     Account obj=new Account(1000);
+     
+	}
+
+}

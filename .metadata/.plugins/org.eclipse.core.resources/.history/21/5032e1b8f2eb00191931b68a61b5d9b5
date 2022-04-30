@@ -1,0 +1,21 @@
+package recursion;
+class Z
+{
+	int  some(int n)
+	{
+		if(n>=0)
+		{
+			return  n;
+		}
+	 return some(n-1) +some(n-2);
+	}
+}
+public class Test {
+
+	public static void main(String[] args) {
+		
+     Z obj=new Z();
+     System.out.println(obj.some(9));
+	}
+
+}

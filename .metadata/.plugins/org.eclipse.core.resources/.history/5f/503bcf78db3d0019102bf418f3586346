@@ -1,0 +1,17 @@
+package networking;
+import java.io.*;
+import java.net.*;
+public class Urls {
+
+	public static void main(String[] args) {
+		try
+		{
+	URL obj=new URL("http://www.javatpoint.com/java-tutorial");
+		}
+		catch(IOException e)
+		{
+			System.out.println(e.getMessage());
+		}
+	}
+
+}

@@ -1,0 +1,34 @@
+package recursion;
+import java.math.BigInteger;
+class C
+{ 	
+	static void  fib(BigInteger a,BigInteger b)
+	{
+	
+			if( b.compareTo(a)>=500)
+			{
+		       return;
+			}
+			else
+			{
+				BigInteger c=a.add(b);
+				System.out.println(c);
+				a=b;
+				b=c;
+				fib(a,b);	
+		}
+	}
+}
+public class Fib_Recursion {
+
+	public static void main(String[] args) {
+		
+		BigInteger a=new BigInteger("0");
+		BigInteger b=new BigInteger("1");
+      System.out.println(a);
+	System.out.println(b);
+	C.fib(a,b);
+	
+	}
+
+}

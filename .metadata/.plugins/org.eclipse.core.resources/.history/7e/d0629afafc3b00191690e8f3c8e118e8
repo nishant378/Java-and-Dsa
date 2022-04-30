@@ -1,0 +1,11 @@
+package serilization;
+
+public class Serialization {
+
+	public static void main(String[] args) {
+		Serialization obj=new Serialization();
+		obj.toString();
+
+	}
+
+}

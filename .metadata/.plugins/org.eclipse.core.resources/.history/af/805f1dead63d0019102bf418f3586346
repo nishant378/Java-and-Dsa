@@ -1,0 +1,23 @@
+package networking;
+import java.io.*;
+import java.net.*;
+public class ServerSockets1 {
+
+	public static void main(String[] args) {
+         try
+         {
+        	 ServerSocket obj=new ServerSocket(3412);
+        	 Socket obj1=obj.accept();
+        	 DataInputStream obj2=new DataInputStream(obj1.getInputStream());
+        	 String s=(String)obj2.readUTF();
+        	 System.out.println("message:"+s);
+        	 obj.close();
+         }
+         catch(IOException e)
+         {
+        	 System.out.println(e.getMessage());
+         }
+
+	}
+
+}

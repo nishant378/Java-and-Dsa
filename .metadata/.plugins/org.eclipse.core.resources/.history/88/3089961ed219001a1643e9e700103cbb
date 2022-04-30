@@ -1,0 +1,22 @@
+package linkedlist;
+
+class LinkedList
+{
+	class Node
+	{
+		int data;
+		Node next;
+	}
+	
+}
+public class CreateLink {
+
+	public static void main(String[] args) {
+		LinkedList.Node obj=new LinkedList().new Node();
+		
+		obj.data=9;
+		System.out.println(obj.next);
+
+	}
+
+}

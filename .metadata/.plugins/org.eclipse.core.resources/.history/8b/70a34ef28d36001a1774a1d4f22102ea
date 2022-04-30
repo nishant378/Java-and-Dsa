@@ -1,0 +1,106 @@
+package tree;
+
+class AvlTree 
+{
+	Node root=new Node();
+	Node c=new Node();
+	class Node
+	{
+		Node left;
+	    int data;
+		Node right;
+	}
+	
+	void makingRoot(int data)
+	{
+		root.left=null;
+		root.data=data;
+		root.right=null;
+		c=root;
+	}
+	
+	void  insert(Node c,int data)
+	{
+			if(c==null)
+			{
+				return ;
+			}
+			else  if(c.data>data)
+			      {
+				       if(c.left!=null)
+				       {
+				    	   insert(c.left,data);
+				       }
+				       else
+				       {
+				    	   Node newnode=new Node();
+				    	   newnode.left=null;
+				    	   newnode.data=data;
+				    	   newnode.right=null;
+				    	   c.left=newnode;
+				       }
+				  }
+			else if(c.data<data)
+				{
+				    if(c.right!=null)
+				    {
+				    	insert(c.right,data);
+				    }
+				    else
+				    {
+				    	Node newnode=new Node();
+				    	newnode.left=null;
+				    	newnode.data=data;
+				    	newnode.right=null;
+				    	c.right=newnode;
+				    }
+				
+					}
+	 }
+	void  Print(Node c)
+	{
+		if(c!=null)
+		{
+			
+			Print(c.left);
+			Print(c.right);
+			System.out.println("data:"+c.data);
+		}
+	}
+	
+	    int height(Node c)
+	    {
+	    	if(c==null)
+	    		return 0;
+	    	else
+	    	{
+	    		int lb=height(c.left);
+	    		int rb=height(c.right);
+	    		
+	    		int balancefactor=lb-rb;
+	    		if(balancefactor==0 || balancefactor==-1 || balancefactor==1)
+	    		{
+	    			System.out.println("balance");
+	    			return 0;
+	    		}
+	    		else
+	    		{
+	    			
+	    			return 0;
+	    		}
+	       }
+	    }
+	    
+	    
+}
+public class Avltree {
+
+	public static void main(String[] args) {
+		AvlTree obj=new AvlTree();
+         obj.makingRoot(5);
+         obj.insert(obj.root,6);   
+       
+          obj.Print(obj.root);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+	}
+
+}

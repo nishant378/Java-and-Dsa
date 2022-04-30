@@ -1,0 +1,18 @@
+package recursion;
+
+public class Factorial_Iteration {
+
+	public static void main(String[] args) {
+		double a=System.nanoTime()/1000000.0; 	
+		
+		int n=33;
+		int f=1;
+		for(int i=n;i>=1;i--)
+		{
+			f=f*i;
+		}
+		System.out.println(f);
+		 System.out.println((System.nanoTime()/1000000.0-a));
+	}
+
+}

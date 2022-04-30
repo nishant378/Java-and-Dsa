@@ -1,0 +1,39 @@
+package linkedlist;
+
+class LinkedList
+{
+	LinkedList c=new LinkedList();
+	Node start=new Node();
+	class Node
+	{
+		int data;
+		Node next;
+	}
+
+	void firstdata(int data)
+	{		
+		start.data=data;
+		start.next=null;
+		c=start;
+	}
+	void enterdata(int data)
+	{
+		Node newnode=new Node();
+		newnode.data=data;
+		newnode.next=null;
+		newnode.next=start;
+		newnode.next=c;
+	}
+}
+public class CreateLink {
+
+	public static void main(String[] args) {
+		LinkedList obj=new LinkedList();
+		obj.firstdata(1);
+		obj.enterdata(2);
+		obj.enterdata(3);
+				
+
+	}
+
+}

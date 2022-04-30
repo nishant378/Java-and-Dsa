@@ -1,0 +1,17 @@
+package networking;
+import java.net.*;
+public class ServerSocket {
+
+	public static void main(String[] args) {
+               try
+               {
+		        ServerSocket obj=new ServerSocket(6748);
+		        Socket obj1
+               }
+               catch(IOException i)
+               {
+            	  System.out.println(i.getMessage());
+               }
+	}
+
+}

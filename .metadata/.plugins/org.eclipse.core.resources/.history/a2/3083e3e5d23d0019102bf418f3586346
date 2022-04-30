@@ -1,0 +1,24 @@
+package networking;
+import java.io.*;
+import java.net.*;
+public class ConnectionOriented {
+
+	public static void main(String[] args) {
+		//If you send request to server socket then you have to write IP address and port number for that
+		try
+		{
+		String IP="Ghosting";
+	    int portNumber=6748;			
+	    Socket obj=new Socket(IP,portNumber);
+	    DataOutputStream obj1=new DataOutputStream(obj.getOutputStream());
+	    obj1.writeUTF("Vicky Please");
+	    
+		}
+		catch(IOException e)
+		{
+			System.out.println(e.getMessage());
+		}
+
+	}
+
+}

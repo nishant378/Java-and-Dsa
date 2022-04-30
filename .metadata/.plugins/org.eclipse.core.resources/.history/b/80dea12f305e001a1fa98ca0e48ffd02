@@ -1,0 +1,41 @@
+package graphs;
+
+class Adjacencymatrix
+{
+	int i=0;
+	char a[]=new char[8];
+	int mat[][]=new int[a.length][a.length];
+	
+	void insertVertex(char vertex)
+	{
+		if(i<a.length)
+		{
+			a[i]=vertex;
+			i++;
+		}
+	}
+	
+	
+}
+public class AdjacencyMatrix {
+
+	public static void main(String[] args) {
+		Adjacencymatrix obj=new Adjacencymatrix();
+		obj.insertVertex('A');
+		obj.insertVertex('B');
+		obj.insertVertex('C');
+		obj.insertVertex('D');
+		obj.insertVertex('E');
+		obj.insertVertex('F');
+		obj.insertVertex('G');
+		obj.insertVertex('H');
+		
+		
+		for(int i=0;i<obj.a.length;i++)
+		{
+		   System.out.println(obj.a[i]);
+		}
+
+	}
+
+}

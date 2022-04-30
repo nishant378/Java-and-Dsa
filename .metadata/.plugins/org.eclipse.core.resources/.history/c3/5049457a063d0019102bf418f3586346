@@ -1,0 +1,18 @@
+package serilization;
+import java.io.*;
+class LoL implements Serializable
+{
+	int a;
+	String b="Sorry";
+}
+public class Deserialization {
+
+	public static void main(String[] args) {
+	LoL obj=new LoL();
+	obj.a=12;
+	obj.b="Jio";
+	
+
+	}
+
+}

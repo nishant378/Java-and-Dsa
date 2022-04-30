@@ -1,0 +1,14 @@
+package graphs;
+
+class Adjacencymatrix
+{
+	
+}
+public class AdjacencyMatrix {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

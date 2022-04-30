@@ -1,0 +1,49 @@
+package array;
+import java.util.Scanner;
+public class Test {
+ 
+	public static void main(String[] args) {
+	int a[][]=new int[2][2];
+	int b[][]=new int[2][2];
+	int c[][]=new int[2][2];
+	Scanner obj=new Scanner(System.in);
+	System.out.println("Enter 1 matrix");
+	for(int i=0;i<=1;i++)
+	{
+		for(int j=0;j<=1;j++)
+		{
+			a[i][j]=obj.nextInt();
+		}
+		
+	}
+	System.out.println("Enter 2 matrix");
+	for(int i=0;i<=1;i++)
+	{
+		for(int j=0;j<=1;j++)
+		{
+			b[i][j]=obj.nextInt();
+		}
+	}
+	for(int i=0;i<=1;i++)
+	{
+		for(int j=0;j<=1;j++)
+		{
+			for(int k=0;k<=1;k++)
+			{
+				c[i][j]=c[i][j]+(a[i][k]*a[k][j]);
+			}
+		}
+	}
+	System.out.println("resulted array");
+	for(int i=0;i<=1;i++)
+	{
+		for(int j=0;j<=1;j++)
+		{
+			System.out.println(c[i][j]);
+		}
+	}
+       obj.close();
+			}
+	}
+
+

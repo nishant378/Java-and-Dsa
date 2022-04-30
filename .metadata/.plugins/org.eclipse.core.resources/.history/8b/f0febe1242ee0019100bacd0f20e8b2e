@@ -1,0 +1,30 @@
+package recursion;
+class Z
+{
+	int f[]=new int[51];
+	int  some(int n)
+	{
+		if(n<=1)
+		{
+			return  n;
+		}
+		if(f[n]!=-1)
+		{
+			return f[n];
+		}
+	 f[n]= some(n-1) +some(n-2);
+	 return f[n];
+	}
+}
+public class Test {
+
+	public static void main(String[] args) {
+     Z obj=new Z();
+     for(int i=0;i<51;i++)
+     {
+    	 obj.f[i]=-1;
+     }
+     System.out.println(obj.some(40));
+	}
+
+}

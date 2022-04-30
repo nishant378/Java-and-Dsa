@@ -1,0 +1,20 @@
+package networking;
+import java.io.*;
+import java.net.*;
+public class UrlConnection {
+
+	public static void main(String[] args) {
+		try
+		{
+		URL obj=new URL("http://www.javatpoint.com/java-tutorial");
+		URLConnection obj1=obj.openConnection();
+		obj1.getInputStream();
+		InputStream obj2=
+		}
+		catch(IOException e)
+		{
+			System.out.println(e.getMessage());
+		}
+	}
+
+}

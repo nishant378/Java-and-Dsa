@@ -1,0 +1,15 @@
+package queue;
+class Circular
+{
+	
+}
+public class CircularQueue {
+
+	public static void main(String[] args) {
+	      
+		Circular obj=new Circular();
+		
+
+	}
+
+}

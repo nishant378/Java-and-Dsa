@@ -1,0 +1,26 @@
+package recursion;
+
+
+
+class B
+{
+	 static int  fact(int n)
+	{
+		if(n==1)
+		{
+			return 1;
+		}
+		else
+		{
+			return n*fact(n-1);
+		}
+	}
+}
+public class Factorail_Recursion {
+
+	public static void main(String[] args) {
+		System.out.println(B.fact(4));
+
+	}
+
+}

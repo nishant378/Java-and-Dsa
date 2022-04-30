@@ -1,0 +1,20 @@
+package tree;
+
+class AvlTree 
+{
+	Node root=new Node();
+	class Node
+	{
+		Node left;
+		Node data;
+		Node right;
+	}
+}
+public class Avltree {
+
+	public static void main(String[] args) {
+		AvlTree obj=new AvlTree();
+         
+	}
+
+}

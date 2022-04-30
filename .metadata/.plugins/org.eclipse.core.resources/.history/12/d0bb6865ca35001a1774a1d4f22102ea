@@ -1,0 +1,29 @@
+package tree;
+
+class AvlTree 
+{
+	Node root=new Node();
+	Node c=new Node();
+	class Node
+	{
+		Node left;
+	    int data;
+		Node right;
+	}
+	
+	void makingRoot(int data)
+	{
+		root.left=null;
+		root.data=data;
+		root.right=null;
+		c=root;
+	}
+}
+public class Avltree {
+
+	public static void main(String[] args) {
+		AvlTree obj=new AvlTree();
+         obj.makingRoot(5);
+	}
+
+}

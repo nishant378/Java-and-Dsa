@@ -1,0 +1,18 @@
+package generics;
+class Animal<T>
+{
+	T i;
+	void set(T i)
+	{
+		System.out.println(i);
+	}
+}
+public class GenericsClass {
+
+	public static void main(String[] args) {
+	Animal<Integer> obj=new Animal<Integer>();
+	obj.set(3);
+     System.out.println(obj);
+	}
+
+}

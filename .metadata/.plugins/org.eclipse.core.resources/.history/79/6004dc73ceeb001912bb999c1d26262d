@@ -1,0 +1,31 @@
+package recursion;
+
+
+
+class B
+{
+	
+	 int  fact(int n)
+	{
+		if(n==1)
+		{
+			return 1;
+		}
+		else
+		{
+			return n*fact(n-1);
+		}
+		
+	}
+	
+}
+public class Factorail_Recursion {
+
+	public static void main(String[] args) {
+		 double a=System.nanoTime()/1000000.0; 
+		B obj=new B();
+		System.out.println(obj.fact(55));
+		 System.out.println((System.nanoTime()/1000000.0-a));
+	}
+
+}

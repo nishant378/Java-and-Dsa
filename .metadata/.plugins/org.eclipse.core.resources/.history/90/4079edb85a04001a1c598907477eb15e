@@ -1,0 +1,32 @@
+package recursion;
+import javax.swing.*;
+import java.awt.*;
+class Tutorial extends JFrame
+{
+	public Tutorial()
+	{
+		setTitle("Tutorial");
+		setSize(960,960);
+		setVisible(true);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+	}
+	public void paint(Graphics g)
+	{
+		for(int i=300;i>=10;i=i/2) {
+	    g.setColor(Color.GREEN);
+		g.drawOval(380,380,380,i);
+	//	g.setColor(Color.RED);
+		//g.fillOval(i,i,i,i);
+		}
+	}
+}
+public class Project {
+
+	public static void main(String[] args) {
+             
+      Tutorial obj=new Tutorial();
+       obj.paint(null);
+
+	}
+
+}

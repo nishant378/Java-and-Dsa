@@ -1,0 +1,21 @@
+package recursion;
+
+import java.math.BigInteger;
+
+public class Factorial_Iteration {
+
+	public static void main(String[] args) {
+		  BigInteger f = new BigInteger("1");
+		double a=System.nanoTime()/1000000.0; 	
+		
+		BigInteger n = new BigInteger("17");
+		BigInteger i = new BigInteger("");
+		for( i=n;i>=1;i--)
+		{
+			f=f.multiply(i);
+		}
+		System.out.println(f);
+		 System.out.println((System.nanoTime()/1000000.0-a));
+	}
+
+}
